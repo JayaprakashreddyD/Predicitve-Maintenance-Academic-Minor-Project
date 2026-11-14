@@ -1,4 +1,4 @@
-# AI-Driven Predictive Maintenance for Manufacturing
+# Cross-Domain Predictive Maintenance and Health Prognostics in Industry 4.0
 
 A production-oriented TensorFlow project that predicts equipment failure from multivariate manufacturing sensor data and demonstrates the complete journey from raw telemetry to customer-facing maintenance alerts.
 
