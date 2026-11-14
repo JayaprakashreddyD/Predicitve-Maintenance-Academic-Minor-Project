@@ -1,0 +1,19 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models:ro
+      - ./data/processed:/app/data/processed:ro
+
+  tensorflow-serving:
+    image: tensorflow/serving:latest
+    ports:
+      - "8501:8501"
+    environment:
+      MODEL_NAME: predictive_maintenance
+    volumes:
+      - ./models/predictive_maintenance:/models/predictive_maintenance:ro

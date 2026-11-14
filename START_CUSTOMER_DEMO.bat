@@ -1,0 +1,10 @@
+@echo off
+cd /d "%~dp0"
+if not exist ".venv\Scripts\python.exe" (
+  echo Virtual environment not found.
+  echo Create it with: py -3.12 -m venv .venv
+  pause
+  exit /b 1
+)
+".venv\Scripts\python.exe" -m streamlit run ui\dashboard.py
+pause

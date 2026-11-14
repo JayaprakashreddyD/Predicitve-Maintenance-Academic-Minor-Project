@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "data": {
+    "n_machines": 12,
+    "days": 45,
+    "frequency_minutes": 10,
+    "failure_horizon_hours": 24,
+    "window_size": 36,
+    "stride": 1
+  },
+  "training": {
+    "epochs": 20,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "validation_fraction": 0.15,
+    "test_fraction": 0.15,
+    "decision_threshold": 0.5
+  },
+  "monitoring": {
+    "drift_z_threshold": 3.0,
+    "alert_probability": 0.65
+  }
+}
