@@ -354,7 +354,7 @@ if run_simulation or step_once:
 st.markdown(
     f"""
     <div class="hero">
-      <h1>AI Predictive Maintenance — Live Plant Simulation</h1>
+      <h1>Predictive Maintenance & Health Monitoring — Live Plant Simulation</h1>
       <p><span class="pulse"></span>Scenario: <strong>{scenario}</strong> ·
       Prediction source: <strong>{"FastAPI model" if api_enabled else "Built-in demo engine"}</strong></p>
     </div>
